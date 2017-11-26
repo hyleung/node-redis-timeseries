@@ -10,6 +10,8 @@ declare module 'hal' {
         link(link:Link): Resource;
         embed(rel:string, resource:Resource, pluralize:boolean):Resource
         toJSON(indent:number):object
+        toXML():string
+        toString():string
     }
     export function Link(rel:string, href:Href):Link
     export function Resource(object:object, uri:string):Resource
