@@ -4,6 +4,7 @@ import * as hal from 'hal';
 
 let app = express();
 let indent = 2;
+
 app.get('/', function(req, res) {
     const form = hal.Link('form',{href:'/events/form'})
     const r = hal.Resource({}, '/').link(form)
